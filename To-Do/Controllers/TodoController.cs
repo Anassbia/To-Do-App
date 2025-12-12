@@ -24,7 +24,7 @@ namespace To_Do.Controllers
 
             }
 
-            return View(nameof(Index));
+            return RedirectToAction(nameof(Index));
 
         }
     }

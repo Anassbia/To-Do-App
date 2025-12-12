@@ -1,7 +1,11 @@
+using To_Do.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<IAddService,IAddService>();
 
 var app = builder.Build();
 
