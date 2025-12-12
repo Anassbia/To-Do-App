@@ -18,7 +18,14 @@ namespace To_Do.Controllers
         [HttpPost]
         public IActionResult Add(TodoAddVM todoAddVM)
         {
-            return View();
+            if (!ModelState.IsValid)
+            {
+                return View();
+
+            }
+
+            return View(nameof(Index));
+
         }
     }
 }
