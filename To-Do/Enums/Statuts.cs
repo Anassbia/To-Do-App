@@ -1,6 +1,6 @@
 ﻿namespace To_Do.Enums
 {
-    public enum Statut
+    public enum Statuts
     {
         TODO=0,
         DOING=1,

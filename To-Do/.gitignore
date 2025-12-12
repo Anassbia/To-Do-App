@@ -38,3 +38,7 @@ Thumbs.db
 ############################
 publish/
 wwwroot/lib/
+
+# Local launch profiles
+Properties/launchSettings.json
+
