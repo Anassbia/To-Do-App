@@ -88,6 +88,6 @@ Le thème est géré **par session**, sans base de données.
 - Bonne séparation entre logique et présentation
 
 ###  Capture d’écran – Thème sombre
-```md
+
 ![Thème sombre](ScreenShots/Dark.png)
 
