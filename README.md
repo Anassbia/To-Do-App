@@ -71,7 +71,7 @@ Chaque action est enregistrée avec un **niveau de log approprié** :
 - `Error` : erreur inattendue
 
 ###  Capture d’écran – Thème sombre
-![Journalisation file et console](Screenshots/journalisation.png)
+![Journalisation file et console](To-Do/Screenshots/journalisation.png)
 
 ##  Gestion du thème clair / sombre
 
@@ -89,5 +89,5 @@ Le thème est géré **par session**, sans base de données.
 
 ###  Capture d’écran – Thème sombre
 
-![Thème sombre](ScreenShots/Dark.png)
+![Thème sombre](To-Do/ScreenShots/Dark.png)
 
