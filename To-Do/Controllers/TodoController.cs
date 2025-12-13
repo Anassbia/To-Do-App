@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using To_Do.Dtos;
 using To_Do.Interfaces;
 using To_Do.Services;
 using To_Do.ViewModels;
@@ -19,6 +20,7 @@ namespace To_Do.Controllers
 
         public IActionResult Index()
         {
+            List<Todo> list = _sessionManagerService.GetTodos(HttpContext,"todos");
             return View();
         }
         public IActionResult Add()
@@ -40,6 +42,15 @@ namespace To_Do.Controllers
 
             return RedirectToAction(nameof(Index));
 
+        }
+
+        public IActionResult Theme(string theme, string returnUrl)
+        {
+            HttpContext.Session.SetString("theme", theme);
+
+            if (!string.IsNullOrEmpty(returnUrl)) return Redirect(returnUrl);//Good UX ,User yb9a f same Psge
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
