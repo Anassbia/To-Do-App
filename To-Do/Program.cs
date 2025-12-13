@@ -1,11 +1,15 @@
 using To_Do.Interfaces;
+using To_Do.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 
-builder.Services.AddScoped<IAddService,IAddService>();
+builder.Services.AddScoped<ITodoService,TodoService>();
+builder.Services.AddScoped<SessionManagerService>();
+
 
 var app = builder.Build();
 
@@ -21,7 +25,7 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthorization();
-
+app.UseSession();
 app.MapStaticAssets();
 
 app.MapControllerRoute(

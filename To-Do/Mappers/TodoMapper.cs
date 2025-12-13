@@ -11,7 +11,7 @@ namespace To_Do.Mappers
             {
                 Libelle = todoAddVM.Libelle,
                 Description = todoAddVM.Description,
-                Statut = todoAddVM.Statut,
+                Statut = todoAddVM.Statut,  
                 DateLimite = todoAddVM.DateLimite,
                 CreatedAt=DateTime.UtcNow,
 
