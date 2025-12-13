@@ -70,8 +70,8 @@ Chaque action est enregistrée avec un **niveau de log approprié** :
 - `Warning` : situation anormale sans blocage
 - `Error` : erreur inattendue
 
-###  Capture d’écran – Thème sombre
-![Journalisation file et console](To-Do/Screenshots/journalisation.png)
+###  Capture d’écran – Journalisation
+![Journalisation file et console](Screenshots/journalisation.png)
 
 ##  Gestion du thème clair / sombre
 
