@@ -71,7 +71,7 @@ Chaque action est enregistrée avec un **niveau de log approprié** :
 - `Error` : erreur inattendue
 
 ###  Capture d’écran – Journalisation
-![Journalisation file et console](Screenshots/Journalisation.png)
+![Journalisation file et console](To-Do/Screenshots/Journalisation.png)
 
 ##  Gestion du thème clair / sombre
 
