@@ -7,7 +7,13 @@ namespace To_Do.Services
     {
         public List<Todo>? GetTodos(HttpContext context,string key) 
         {
-            return JsonSerializer.Deserialize<List<Todo>>(context.Session.GetString(key)!);
+            var json = context.Session.GetString(key);
+
+            if (string.IsNullOrEmpty(json))
+            {
+                return new List<Todo>();
+            }
+            return JsonSerializer.Deserialize<List<Todo>>(json);
         }
     }
 }

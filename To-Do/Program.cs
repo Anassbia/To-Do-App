@@ -1,3 +1,4 @@
+using To_Do.Filters;
 using To_Do.Interfaces;
 using To_Do.Services;
 
@@ -9,6 +10,13 @@ builder.Services.AddSession();
 
 builder.Services.AddScoped<ITodoService,TodoService>();
 builder.Services.AddScoped<SessionManagerService>();
+
+builder.Services.AddScoped<ThemeFilter>();
+
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<ThemeFilter>();
+});//globale
 
 
 var app = builder.Build();

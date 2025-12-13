@@ -21,7 +21,7 @@ namespace To_Do.Controllers
         public IActionResult Index()
         {
             List<Todo> list = _sessionManagerService.GetTodos(HttpContext,"todos");
-            return View();
+            return View(list);
         }
         public IActionResult Add()
         {
@@ -46,6 +46,10 @@ namespace To_Do.Controllers
 
         public IActionResult Theme(string theme, string returnUrl)
         {
+            if (theme != "dark" && theme != "light")//enum est pas nessecaire
+            {
+                theme = "light";
+            }
             HttpContext.Session.SetString("theme", theme);
 
             if (!string.IsNullOrEmpty(returnUrl)) return Redirect(returnUrl);//Good UX ,User yb9a f same Psge

@@ -29,3 +29,75 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.light {
+        background-color: #ffffff;
+        color: #000000;
+}
+body.dark {
+        background-color: #121212;
+        color: #eaeaea;
+}
+body.dark a {
+        color: #90caf9;
+    }
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+background-color: #1e1e1e;
+color: #ffffff;
+border: 1px solid #444;
+    }
+
+body.dark button {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #555;
+}
+
+/* force navbar twli dar  */
+body.dark .navbar {
+        background-color: #1e1e1e !important;
+        border-color: #333 !important;
+}
+
+body.dark .navbar .nav-link,
+body.dark .navbar .navbar-brand {
+            color: #eaeaea !important;
+}
+
+body.dark .navbar .nav-link:hover {
+                color: #90caf9 !important;
+}
+/*foooter*/
+
+body.dark footer {
+        background-color: #1e1e1e;
+        color: #aaa;
+        border-color: #333;
+}
+
+body.dark footer a {
+            color: #90caf9;
+}
+
+    body.dark .list-group-item {
+        background-color: #1e1e1e;
+        color: #eaeaea;
+        border-color: #333;
+    }
+
+    body.dark .alert {
+        background-color: #1e1e1e;
+        color: #eaeaea;
+        border-color: #333;
+    }
+
+

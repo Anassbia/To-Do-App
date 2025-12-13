@@ -1,1 +1,32 @@
-﻿<h1>My Todos</h1>
+﻿@using To_Do.Dtos
+@using To_Do.Enums
+@model List<Todo>
+
+@functions {
+    string GetStatusBadgeClass(Statuts statut)
+    {
+        return statut switch
+        {
+            Statuts.TODO => "bg-secondary",
+            Statuts.DOING => "bg-warning text-dark",
+            Statuts.DONE => "bg-success",
+            _ => "bg-dark"
+        };
+    }
+}
+
+
+<h1>My Todos</h1>
+<ul class="list-group">
+    @foreach (var todo in Model)
+    {
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>@todo.Libelle</span>
+            
+            <span class="badge @GetStatusBadgeClass(todo.Statut)">
+                @todo.Statut
+            </span>
+        </li>
+    }
+</ul>
+
