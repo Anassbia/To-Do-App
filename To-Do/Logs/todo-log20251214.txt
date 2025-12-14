@@ -1,0 +1,8 @@
+2025-12-14 17:17:22.729 +01:00 [INF] page index accede
+2025-12-14 17:17:22.764 +01:00 [INF] liste des todos charge 
+2025-12-14 17:17:24.249 +01:00 [INF] Requete de changment de theme : dark
+2025-12-14 17:17:24.260 +01:00 [INF] page index accede
+2025-12-14 17:17:24.261 +01:00 [INF] liste des todos charge 
+2025-12-14 17:17:24.707 +01:00 [INF] Requete de changment de theme : light
+2025-12-14 17:17:24.713 +01:00 [INF] page index accede
+2025-12-14 17:17:24.714 +01:00 [INF] liste des todos charge 
