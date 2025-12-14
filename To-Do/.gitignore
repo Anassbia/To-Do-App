@@ -5,22 +5,17 @@ bin/
 obj/
 
 ############################
-# IDE files
+# IDE / user-specific files
 ############################
 .vs/
 .vscode/
 .idea/
-
-############################
-# Solution & user files
-############################
-*.sln
 *.user
 *.suo
 *.rsuser
 
 ############################
-# App configuration
+# App configuration (ignored intentionally)
 ############################
 appsettings.json
 appsettings.*.json
@@ -37,8 +32,6 @@ Thumbs.db
 # Publish output
 ############################
 publish/
-wwwroot/lib/
 
 # Local launch profiles
 Properties/launchSettings.json
-
